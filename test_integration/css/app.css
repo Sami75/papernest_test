@@ -10,13 +10,14 @@ body {
   height: 100%;
 }
 
-.app_bar {
+.app_bar,
+.app_header {
   background-color: #001487;
   color: white;
   padding: 15px 24px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #00affa;
 }
 
 .app_bar_logo {
@@ -58,7 +59,7 @@ body {
 .separator {
   height: auto;
   width: 1px;
-  background-color: #008bde;
+  background-color: #00affa;
 }
 .menu_item {
   margin: 0 20px;
@@ -88,8 +89,8 @@ body {
 }
 
 .app_bar_icon {
-  color: #008bde;
-  margin: 0 0 0 5px
+  color: #00affa;
+  margin: 0 0 0 5px;
 }
 .app_bar_icon svg {
   width: 12px;
@@ -110,4 +111,71 @@ body {
   text-align: center;
   padding: 5px;
   font-weight: bold;
+}
+
+.app_header {
+  padding: 20px 24px;
+}
+
+.app_header_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.app_header_user {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.app_header_progress_bar {
+  margin: 0 10px 0 0;
+}
+
+.progress-ring__circle {
+  stroke-dasharray: 251.327, 251.327;
+  stroke-dashoffset: 188.496;
+  transition: 0.35s stroke-dashoffset;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  z-index: 5;
+}
+
+.app_header_user_info_welcome {
+  font-size: 25px;
+}
+
+.app_header_user_info_details {
+  color: #00affa;
+  margin: 10px 0;
+}
+
+.app_header_user_info_details span {
+  font-size: 25px;
+}
+
+.app_header_actions {
+  display: flex;
+}
+
+.app_header_actions div {
+  height: 60px;
+  width: 60px;
+  background-color: #001fd2;
+  border-radius: 50%;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app_header_actions div svg {
+  margin: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.content {
+  padding: 20px 24px;
 }
