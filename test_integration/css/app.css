@@ -1,3 +1,25 @@
+:root {
+  --main-bg: #ebedf6;
+
+  --colors-primary: #001487;
+  --colors-secondary: #00affa;
+
+  --colors-primary-lighten: #002b98;
+
+  --colors-text-1: #bdbfd7;
+  --colors-text-2: #e1e5ef;
+  --colors-text-3: #e31b9e;
+  --colors-text-4: #f2f3f9;
+
+  --colors-border-1: #f4f4f8;
+}
+
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+
 body {
   margin: 0;
   width: 100vw;
@@ -6,18 +28,18 @@ body {
 }
 
 .app {
-  background-color: #ebedf6;
+  background-color: var(--main-bg);
   height: 100%;
 }
 
 .app_bar,
 .app_header {
-  background-color: #001487;
+  background-color: var(--colors-primary);
   color: white;
   padding: 15px 24px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #00affa;
+  border-bottom: 1px solid var(--colors-secondary);
 }
 
 .app_bar_logo {
@@ -59,7 +81,7 @@ body {
 .separator {
   height: auto;
   width: 1px;
-  background-color: #00affa;
+  background-color: var(--colors-secondary);
 }
 .menu_item {
   margin: 0 20px;
@@ -89,7 +111,7 @@ body {
 }
 
 .app_bar_icon {
-  color: #00affa;
+  color: var(--colors-secondary);
   margin: 0 0 0 5px;
 }
 .app_bar_icon svg {
@@ -101,15 +123,15 @@ body {
   background: red;
   color: white;
   position: absolute;
-  width: 9px;
-  height: 9px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   top: -5px;
   right: -5px;
-  line-height: 9px;
-  font-size: 9px;
+  line-height: 18px;
+  font-size: 12px;
   text-align: center;
-  padding: 5px;
+  /* padding: 5px; */
   font-weight: bold;
 }
 
@@ -147,7 +169,7 @@ body {
 }
 
 .app_header_user_info_details {
-  color: #00affa;
+  color: var(--colors-secondary);
   margin: 10px 0;
 }
 
@@ -162,7 +184,7 @@ body {
 .app_header_actions div {
   height: 60px;
   width: 60px;
-  background-color: #001fd2;
+  background-color: var(--colors-primary-lighten);
   border-radius: 50%;
   margin: 0 10px;
   display: flex;
@@ -178,4 +200,126 @@ body {
 
 .content {
   padding: 20px 24px;
+}
+
+.content_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 500px);
+  gap: 50px;
+  justify-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  max-width: 500px;
+  width: 500px;
+  color: var(--colors-primary);
+}
+
+.card_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 24px;
+  cursor: pointer;
+}
+.card_header_secondary {
+  color: var(--colors-secondary);
+  display: flex;
+  align-items: center;
+}
+
+.card_content {
+  margin: 10px 0;
+  padding: 24px;
+}
+
+.card_stats_progress {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.progress_bar_vertical {
+  height: 100px;
+  width: 8px;
+  border-radius: 8px;
+  background-color: var(--colors-text-4);
+  position: relative;
+  margin: 0 20px 0 0;
+}
+
+.progress_bar_vertical_inner {
+  background-color: var(--colors-secondary);
+  position: absolute;
+  bottom: 0;
+  height: 10px;
+  width: 8px;
+  border-radius: 8px;
+}
+
+.stats_percent {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+.stats_text {
+  color: var(--colors-text-1);
+}
+
+.card_footer {
+  border-top: 2px solid var(--colors-border-1);
+  padding: 24px;
+}
+
+.box_contract {
+  border: 2px solid var(--colors-border-1);
+  display: flex;
+}
+
+.no_contract {
+  color: var(--colors-text-2);
+}
+
+.box_contract_logo {
+  border-right: 2px solid var(--colors-border-1);
+  padding: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.box_contract_no_logo {
+  height: 35px;
+  width: 80px;
+  border: 2px solid var(--colors-border-1);
+  border-radius: 20px;
+}
+
+.box_contract_details {
+  padding: 24px;
+  width: 100%;
+}
+
+.box_contract_selected_contract,
+.box_contract_selected_contract_no_contract {
+  margin: 0 0 10px 0;
+  color: var(--colors-text-1);
+}
+
+.box_contract_selected_contract_no_contract {
+  color: var(--colors-text-2);
+}
+
+.box_contract_info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: var(--colors-primary);
+}
+
+.box_contract_info_no_contract {
+  color: var(--colors-text-2);
 }

@@ -33,9 +33,7 @@
           <div class="app_bar_menu_right">
             <div class="menu_item">
               <i class="app_bar_icon" data-feather="bell"></i>
-              <div class="badge">
-                <span>1</span>
-              </div>
+              <span class="badge">1</span>
             </div>
             <div class="separator"></div>
             <div class="menu_item">
@@ -49,14 +47,9 @@
         <div class="app_header_wrapper">
           <div class="app_header_user">
             <div class="app_header_progress_bar">
-              <svg
-                class="progress-ring"
-                width="100"
-                height="100"
-                style="background-color: #001487"
-              >
+              <svg class="progress-ring" width="100" height="100">
                 <circle
-                  stroke="#001fd2"
+                  stroke="#002b98"
                   stroke-width="8"
                   stroke-linecap="round"
                   fill="transparent"
@@ -66,7 +59,7 @@
                 ></circle>
                 <circle
                   class="progress-ring__circle"
-                  stroke="#00AFFA"
+                  stroke="#00affa"
                   stroke-width="8"
                   stroke-linecap="round"
                   fill="transparent"
@@ -85,12 +78,99 @@
           </div>
           <div class="app_header_actions">
             <div><i class="app_bar_icon" data-feather="phone"></i></div>
-            <div><i class="app_bar_icon" data-feather="message-square"></i></div>
+            <div>
+              <i class="app_bar_icon" data-feather="message-square"></i>
+            </div>
             <div><i class="app_bar_icon" data-feather="help-circle"></i></div>
           </div>
         </div>
       </div>
-      <div class="content">Content</div>
+      <div class="content">
+        <div class="content_row">
+          <div class="content_grid">
+            <div class="card">
+              <div class="card_header">
+                <div class="card_header_main">Energie</div>
+                <div class="card_header_secondary">
+                  Continuer à souscrire
+                  <i class="app_bar_icon" data-feather="chevron-right"></i>
+                </div>
+              </div>
+              <div class="card_content">
+                <div class="card_stats_progress">
+                  <div class="progress_bar_vertical">
+                    <div class="progress_bar_vertical_inner"></div>
+                  </div>
+                  <div class="stats">
+                    <div class="stats_percent">10%</div>
+                    <div class="stats_text">
+                      de vos données <br />saisies & transmises
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card_footer">
+                <div class="box_contract no_contract">
+                  <div class="box_contract_logo">
+                    <div class="box_contract_no_logo"></div>
+                  </div>
+                  <div class="box_contract_details">
+                    <div class="box_contract_selected_contract_no_contract">
+                      Contract sélectionné
+                    </div>
+                    <div class="box_contract_info_no_contract">
+                      <div>Aucun contract sélectionné</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card_header">
+                <div class="card_header_main">Box</div>
+                <div class="card_header_secondary">
+                  Continuer à souscrire
+                  <i class="app_bar_icon" data-feather="chevron-right"></i>
+                </div>
+              </div>
+              <div class="card_content">
+                <div class="card_stats_progress">
+                  <div class="progress_bar_vertical">
+                    <div
+                      class="progress_bar_vertical_inner"
+                      style="height: 65%"
+                    ></div>
+                  </div>
+                  <div class="stats">
+                    <div class="stats_percent">65%</div>
+                    <div class="stats_text">
+                      de vos données <br />saisies & transmises
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card_footer">
+                <div class="box_contract">
+                  <div class="box_contract_logo">SFR LOGO</div>
+                  <div class="box_contract_details">
+                    <div class="box_contract_selected_contract">
+                      Contract sélectionné
+                    </div>
+                    <div class="box_contract_info">
+                      <div>Fibre Plus</div>
+                      <div>29,99 €/mois TTC</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">Assurance</div>
+            <div class="card">Courrier</div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
