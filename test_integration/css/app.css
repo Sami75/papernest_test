@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto", arial, sans-serif;
+}
+
+.app {
+  background-color: #ebedf6;
+  height: 100%;
+}
+
+.app_bar {
+  background-color: #001487;
+  color: white;
+  padding: 15px 24px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+.app_bar_logo {
+  margin: 0 10px;
+  padding: 0 10px 0 0;
+  cursor: pointer;
+  transition: 0.2s ease-in-out all;
+  transform: scale(1);
+}
+
+.app_bar_logo:hover {
+  /* animation: bounce 0.4s; */
+  transform: scale(1.5);
+}
+
+@keyframes bounce {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.app_bar_menu {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.app_bar_menu_left {
+  flex: 1;
+  display: flex;
+}
+
+.separator {
+  height: auto;
+  width: 1px;
+  background-color: #008bde;
+}
+.menu_item {
+  margin: 0 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.menu_item span {
+  padding-bottom: 3px;
+  border-bottom: 1px solid transparent;
+}
+
+.menu_item:hover span {
+  border-bottom: 1px solid white;
+}
+
+.menu_item:hover .badge span {
+  border-bottom: 0px solid transparent;
+}
+
+.app_bar_menu_right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.app_bar_icon {
+  color: #008bde;
+  margin: 0 0 0 5px
+}
+.app_bar_icon svg {
+  width: 12px;
+  height: 12px;
+}
+
+.badge {
+  background: red;
+  color: white;
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  top: -5px;
+  right: -5px;
+  line-height: 9px;
+  font-size: 9px;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+}

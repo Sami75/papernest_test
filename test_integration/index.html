@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test intégration - Papernest</title>
+    <link href="./css/app.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="app_bar">
+        <div class="app_bar_logo">
+          <i data-feather="home"></i>
+        </div>
+        <div class="app_bar_menu">
+          <div class="app_bar_menu_left">
+            <div class="separator"></div>
+            <div class="menu_item">
+              <span> Tableau de bord </span>
+            </div>
+            <div class="separator"></div>
+            <div class="menu_item">
+              <span> Souscriptions </span>
+              <i class="app_bar_icon" data-feather="chevron-down"></i>
+            </div>
+          </div>
+          <div class="app_bar_menu_right">
+            <div class="menu_item">
+              <i class="app_bar_icon" data-feather="bell"></i>
+              <div class="badge">
+                <span>1</span>
+              </div>
+            </div>
+            <div class="separator"></div>
+            <div class="menu_item">
+              <span> Nicolas Bussière </span>
+              <i class="app_bar_icon" data-feather="chevron-down"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="app_header">Header</div>
+      <div class="content">Content</div>
+    </div>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
