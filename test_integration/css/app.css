@@ -25,10 +25,10 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: "Roboto", arial, sans-serif;
+  overflow: hidden;
 }
 
 .app {
-  background-color: var(--main-bg);
   height: 100%;
 }
 
@@ -40,6 +40,10 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--colors-secondary);
+}
+
+.app_bar {
+  height: 60px;
 }
 
 .app_bar_logo {
@@ -137,6 +141,7 @@ body {
 
 .app_header {
   padding: 20px 24px;
+  height: 145px;
 }
 
 .app_header_wrapper {
@@ -150,6 +155,7 @@ body {
   display: flex;
   flex: 1;
   align-items: center;
+  height: 145px;
 }
 .app_header_progress_bar {
   margin: 0 10px 0 0;
@@ -200,6 +206,9 @@ body {
 
 .content {
   padding: 20px 24px;
+  background-color: var(--main-bg);
+  height: calc(100% - 145px - 60px);
+  overflow: auto;
 }
 
 .content_grid {
@@ -215,6 +224,7 @@ body {
   max-width: 500px;
   width: 500px;
   color: var(--colors-primary);
+  height: 410px;
 }
 
 .card_header {
@@ -224,6 +234,7 @@ body {
   font-weight: bold;
   padding: 24px;
   cursor: pointer;
+  height: 72px;
 }
 .card_header_secondary {
   color: var(--colors-secondary);
@@ -234,6 +245,42 @@ body {
 .card_content {
   margin: 10px 0;
   padding: 24px;
+  min-height: 160px;
+  height: calc(100% - 72px - 180px);
+}
+
+.no_footer {
+  height: calc(100% - 72px);
+}
+
+.empty_contract {
+  border: 2px solid var(--colors-border-1);
+  height: 100%;
+}
+
+.start_souscriptions {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  border-bottom: 2px solid var(--colors-border-1);
+}
+
+.start_souscriptions div {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.empty_contract_shield_icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 20px;
+}
+
+.souscription_description {
+  display: block;
+  border-bottom: unset;
+  color: var(--colors-text-1);
 }
 
 .card_stats_progress {
@@ -273,6 +320,7 @@ body {
 .card_footer {
   border-top: 2px solid var(--colors-border-1);
   padding: 24px;
+  height: 180px;
 }
 
 .box_contract {
@@ -322,4 +370,79 @@ body {
 
 .box_contract_info_no_contract {
   color: var(--colors-text-2);
+}
+
+.card_stats_steps {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.steps {
+  margin: 0;
+  padding: 0;
+}
+.steps li {
+  display: flex;
+  color: #999;
+}
+
+.steps div {
+  position: relative;
+  /* padding: 0 1.5em; */
+}
+
+.steps div::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  transform: translateX(60%);
+  border-radius: 50%;
+  background: #fff;
+  border: 3px var(--colors-text-1) solid;
+  width: 0.5em;
+  height: 0.5em;
+}
+
+.steps .active div::after {
+  border: 3px var(--colors-secondary) solid;
+}
+
+.steps span {
+  padding: 0 1.5em 1em 1.5em;
+  position: relative;
+}
+
+.steps span::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  height: 100%;
+  border-left: 3px var(--colors-text-1) solid;
+}
+
+.steps .active span::before {
+  border-left: 3px var(--colors-secondary) solid;
+}
+
+.steps span::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -20px;
+  left: 0;
+  height: 100%;
+  border-left: 3px var(--colors-text-1) solid;
+}
+
+.steps .active span::after {
+  border-left: 3px var(--colors-secondary) solid;
+}
+
+.steps strong {
+  display: block;
+  font-weight: bolder;
 }
