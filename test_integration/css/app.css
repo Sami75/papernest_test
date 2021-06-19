@@ -250,7 +250,8 @@ body {
 }
 
 .no_footer {
-  height: calc(100% - 72px);
+  height: calc(100% - 72px - 12px);
+  margin-bottom: 0;
 }
 
 .empty_contract {
