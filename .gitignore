@@ -1,0 +1,20 @@
+./compteur_react/node_modules
+./compteur_react/.pnp
+./compteur_react/.pnp.js
+
+# testing
+./compteur_react/coverage
+
+# production
+./compteur_react/build
+
+# misc
+./compteur_react/.DS_Store
+./compteur_react/.env.local
+./compteur_react/.env.development.local
+./compteur_react/.env.test.local
+./compteur_react/.env.production.local
+
+./compteur_react/npm-debug.log*
+./compteur_react/yarn-debug.log*
+./compteur_react/yarn-error.log*
